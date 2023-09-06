@@ -10,7 +10,7 @@ namespace VirtualMethodss
     {
         static void Main(string[] args)
         {
-            SqlServer sqlServer = new SqlServer();//Test
+            SqlServer sqlServer = new SqlServer();
             sqlServer.Add();
             MySqlServer mySql = new MySqlServer();
             mySql.Add();
