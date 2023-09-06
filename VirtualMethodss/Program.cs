@@ -12,8 +12,10 @@ namespace VirtualMethodss
         {
             SqlServer sqlServer = new SqlServer();
             sqlServer.Add();
+            sqlServer.Delete();
             MySqlServer mySql = new MySqlServer();
             mySql.Add();
+            mySql.Delete();
 
             Console.ReadLine();
         }
@@ -23,22 +25,38 @@ namespace VirtualMethodss
     {
         public virtual void Add()
         {
-            Console.WriteLine("Added by default");
+            Console.WriteLine("Added from database");
         }
 
         public virtual void Delete()
         {
-            Console.WriteLine("Deleted by default");
+            Console.WriteLine("Deleted from database");
         }
     }
 
     class SqlServer : Database
     {
-
+        public override void Add()
+        {
+            Console.WriteLine("Added by Sql Code");
+            //base.Add();
+        }
+        public override void Delete()
+        {
+            Console.WriteLine("Deleted by Sql Code");
+            //base.Delete();
+        }
     }
 
     class MySqlServer : Database
     {
-
+        public override void Add()
+        {
+            base.Add();
+        }
+        public override void Delete()
+        {
+            base.Delete();
+        }
     }
 }
