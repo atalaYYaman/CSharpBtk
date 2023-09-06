@@ -1,7 +1,0 @@
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\bin\Debug\Inheritance.exe.config
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\bin\Debug\Inheritance.exe
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\bin\Debug\Inheritance.pdb
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\obj\Debug\Inheritance.csproj.AssemblyReference.cache
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\obj\Debug\Inheritance.exe
-C:\Users\Yaman\source\repos\CSharpCourse\Inheritance\obj\Debug\Inheritance.pdb

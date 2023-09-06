@@ -1,7 +1,0 @@
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\bin\Debug\InterfacesDemo.exe.config
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\bin\Debug\InterfacesDemo.exe
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\bin\Debug\InterfacesDemo.pdb
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\obj\Debug\InterfacesDemo.csproj.AssemblyReference.cache
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\obj\Debug\InterfacesDemo.csproj.CoreCompileInputs.cache
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\obj\Debug\InterfacesDemo.exe
-C:\Users\Yaman\source\repos\CSharpCourse\InterfacesDemo\obj\Debug\InterfacesDemo.pdb
