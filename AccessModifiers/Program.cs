@@ -34,4 +34,13 @@ namespace AccessModifiers
             
         }
     }
+    public class Course
+    {
+        public string Name { get; set; }
+
+        private class NestedClass
+        {
+
+        }
+    }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9613976E-9849-4545-B78B-CC08DF7E4BE4}</ProjectGuid>
+    <ProjectGuid>{35B1874D-0D4F-43CE-A956-4E45B2BC59B7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AccessModifiers</RootNamespace>
-    <AssemblyName>AccessModifiers</AssemblyName>
+    <RootNamespace>AccessModifiersDemo</RootNamespace>
+    <AssemblyName>AccessModifiersDemo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CourseManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
