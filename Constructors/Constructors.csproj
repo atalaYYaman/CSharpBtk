@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{35B1874D-0D4F-43CE-A956-4E45B2BC59B7}</ProjectGuid>
+    <ProjectGuid>{0C61098B-D861-491F-B8BB-6C2AFF1AEA43}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AccessModifiersDemo</RootNamespace>
-    <AssemblyName>AccessModifiersDemo</AssemblyName>
+    <RootNamespace>Constructors</RootNamespace>
+    <AssemblyName>Constructors</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AccessModifiers\AccessModifiers.csproj">
-      <Project>{9613976e-9849-4545-b78b-cc08df7e4be4}</Project>
-      <Name>AccessModifiers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
