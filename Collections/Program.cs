@@ -17,6 +17,32 @@ namespace Collections
 
             //Arraylist();
 
+            //List();
+
+            //Adından da belli olduğu gibi sözlük gibi kullanılırlar.Her value'nin bir key'i vardır.
+            //Bu Key'ler bizi value ye götütür.
+            Dictionary<string,string> dictionary = new Dictionary<string,string>();
+            dictionary.Add("Banana","Muz");
+            dictionary.Add("Headset","Kulaklık");
+            dictionary.Add("Threat","Tehtid");
+
+            Console.WriteLine(dictionary["Headset"]);//Key ini verdiğimiz zaman onun karşılığı olan değer(value) ini alırız.
+
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine(item.Value);//Burada sadece Value'ları yazdırdık.
+                Console.WriteLine(item.Key);//Burada sadece Key'leri yazdırdık.
+            }
+
+            //ContainsKey bool in üzerinden çalışır.
+            Console.WriteLine(dictionary.ContainsKey("glass"));//"glass" varmı sorgusunu attık.False döndürece çünkü öyle bir key yok.
+            Console.WriteLine(dictionary.ContainsKey("Banana"));//"Banana" varmı sorgusunu attık.True döndürecek ama karşılığını yazmayacak.
+
+            Console.ReadLine();
+        }
+
+        private static void List()
+        {
             List<string> cities = new List<string>();
             cities.Add("Ankara");//Bundan sonra sadece string değeri verebiliriz.Çünkü ilk başta öyle tanımladık.
 
@@ -78,7 +104,6 @@ namespace Collections
 
             var count = customers.Count;//İçerdeki veri sayısını söyler ama öncesinde Clear attığımız için şuan sıfır döndürür.
             Console.WriteLine("Count: {0}", count);
-            Console.ReadLine();
         }
 
         private static void Arraylist()
