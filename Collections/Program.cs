@@ -39,10 +39,11 @@ namespace Collections
             new Customer { Id = 2, FirstName = "Yaman" }
             };
 
-            
+
             var customer2 = new Customer
             {
-                Id = 3, FirstName = "Azra"
+                Id = 3,
+                FirstName = "Azra"
             };
             customers.Add(customer2);
             customers.AddRange(new Customer[2]
@@ -55,7 +56,20 @@ namespace Collections
 
             //customers.Clear();//İçerisinde ki verileri siler.
 
+            var index = customers.IndexOf(customer2);//IndexOf bize listedeki elemanın listede kaçıncı sırada olduğunu verir.
+            Console.WriteLine("Index: {0}", index);
 
+            customers.Add(customer2);
+            var index2 = customers.LastIndexOf(customer2);//LastIndexOf sondan başlayarak tarama yapar.
+            Console.WriteLine("Index: {0}", index2);
+
+            customers.Insert(0, customer2);//Add her zaman değeri en sona eklerken. Insert değeri istediğimiz yere eklememizi sağlar.
+
+            customers.Remove(customer2);//İstediğimiz değeri kaldırır ancak bunu bir defa yapabilir ve sonrasında aramayı bırakır.
+                                        //Eğer o değerden birden fazla varsa sadece biri gider.
+
+            //Bu konuyu daha bilmiyoruz ama kısaca listedeki aynı türden değerlerin hepsini bu şekilde silebiliriz.
+            customers.RemoveAll(c => c.FirstName == "Salih");
 
             foreach (var customer in customers)
             {
@@ -63,7 +77,7 @@ namespace Collections
             }
 
             var count = customers.Count;//İçerdeki veri sayısını söyler ama öncesinde Clear attığımız için şuan sıfır döndürür.
-            Console.WriteLine("Count: {0}",count);
+            Console.WriteLine("Count: {0}", count);
             Console.ReadLine();
         }
 
