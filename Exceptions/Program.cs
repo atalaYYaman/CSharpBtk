@@ -20,9 +20,26 @@ namespace Exceptions
             {
                 Console.WriteLine(exception.Message);
             }
-            
+
+            //Method
+            HandleException(() =>//Bu method içinde method kullanmak için bu şekilde yazılır.
+            {
+                Find();//Methodun içindeki action'nın yerine Find() methodunu getirdik.
+            }); 
 
             Console.ReadLine();
+        }
+
+        private static void HandleException(Action action)
+        {
+            try
+            {
+                action.Invoke();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception.Message);
+            }
         }
 
         private static void Find()
