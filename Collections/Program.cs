@@ -20,11 +20,14 @@ namespace Collections
             List<string> cities = new List<string>();
             cities.Add("Ankara");//Bundan sonra sadece string değeri verebiliriz.Çünkü ilk başta öyle tanımladık.
 
+            //Console.WriteLine(cities.Contains("Ankara"));//Çıktı true döner çünkü aynı eleman içeride de var.
+
             foreach (var city in cities)
             {
                 Console.WriteLine(city);
             }
 
+            //------------------------------------------
             //List<Customer> customers = new List<Customer>();
             //customers.Add(new Customer { Id = 1, FirstName = "Ata" });
             //customers.Add(new Customer { Id = 2, FirstName = "Yaman" });
@@ -36,11 +39,31 @@ namespace Collections
             new Customer { Id = 2, FirstName = "Yaman" }
             };
 
+            
+            var customer2 = new Customer
+            {
+                Id = 3, FirstName = "Azra"
+            };
+            customers.Add(customer2);
+            customers.AddRange(new Customer[2]
+                {
+                    new Customer { Id = 4, FirstName ="Ali"},
+                    new Customer { Id = 5, FirstName = "Ayşe"}
+                });
+
+            Console.WriteLine(customers.Contains(customer2));//Bunun içerisine new'leyerek koyduğumuz herşey false döndürür.
+
+            //customers.Clear();//İçerisinde ki verileri siler.
+
+
+
             foreach (var customer in customers)
             {
-                Console.WriteLine(customer);
+                Console.WriteLine(customer.FirstName);
             }
 
+            var count = customers.Count;//İçerdeki veri sayısını söyler ama öncesinde Clear attığımız için şuan sıfır döndürür.
+            Console.WriteLine("Count: {0}",count);
             Console.ReadLine();
         }
 
