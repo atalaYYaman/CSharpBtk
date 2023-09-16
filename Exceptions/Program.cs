@@ -21,7 +21,7 @@ namespace Exceptions
                 Console.WriteLine(exception.Message);
             }
 
-            //Method
+            //Method - Action Delegasyonu
             HandleException(() =>//Bu method içinde method kullanmak için bu şekilde yazılır.
             {
                 Find();//Methodun içindeki action'nın yerine Find() methodunu getirdik.
