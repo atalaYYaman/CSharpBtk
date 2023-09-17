@@ -29,6 +29,14 @@ namespace EntityFrameworkDemo
             dgwProducts.DataSource = _productDal.GetAll();
         }
 
+        private void SearchProducts(string key)
+        {
+            //Koleksiyonlardan getirir.
+            //dgwProducts.DataSource = _productDal.GetAll().Where(p=>p.Name.Contains(key)).ToList();
+            //Veritabanından çeker.
+            dgwProducts.DataSource = _productDal.GetByName(key);
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             _productDal.Add(new Product
@@ -72,6 +80,16 @@ namespace EntityFrameworkDemo
             
             LoadProducts();
             MessageBox.Show("Deleted!");
+        }
+
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(tbxSearch.Text);
+        }
+
+        private void tbxGetById_Click(object sender, EventArgs e)
+        {
+            _productDal.GetById(1);
         }
     }
 }
