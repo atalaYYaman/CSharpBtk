@@ -69,5 +69,7 @@ namespace AdoNetDemo
             LoadProducts();
             MessageBox.Show("Deleted!");
         }
+
+
     }
 }
